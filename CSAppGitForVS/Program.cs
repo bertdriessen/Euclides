@@ -8,6 +8,8 @@ namespace CSAppGitForVS
 {
     class Program
     {
+        public string Destreing { get; set; }
+
         static void Main(string[] args)
         {
             // bereken grootste gemene deler
