@@ -7,13 +7,34 @@ using System.Threading.Tasks;
 namespace CSAppGitForVS
 {
     class Program
-    {
-        public string Destreing { get; set; }
-
+    {   
         static void Main(string[] args)
         {
+            Console.WriteLine("voer getal 1 in ");
+            string line1 = Console.ReadLine();
+            int value1;
+            if (int.TryParse(line1, out value1)) // Try to parse the string as an integer
+            {
+                //Console.WriteLine(value1);
+            }
+            else
+            {
+                Console.WriteLine("Not an integer!");
+            }
+            Console.WriteLine("voer getal 2 in ");
+            string line2 = Console.ReadLine();
+            int value2;
+            if (int.TryParse(line2, out value2)) // Try to parse the string as an integer
+            {
+                //Console.WriteLine(value2);
+            }
+            else
+            {
+                Console.WriteLine("Not an integer!");
+            }
+
             // bereken grootste gemene deler
-            var deler = ggd(22, 8);
+            var deler = ggd(value1, value2);
             Console.WriteLine("Groote gemene deler {0}", deler);
         }
 
